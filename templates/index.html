@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>מלאכי שחמט</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="logo">♟️ מלאכי שחמט</div>
+      <div class="top-controls" id="top-controls">
+        <button id="login-btn" class="primary-btn">הכנס</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="board-section">
+        <div class="board-header">
+          <div id="player-white" class="player-tag">לבן: —</div>
+          <div id="turn-indicator" class="turn-indicator">התור: —</div>
+          <div id="player-black" class="player-tag">שחור: —</div>
+        </div>
+        <div id="chess-board" class="chess-board"></div>
+        <div id="status-bar" class="status-bar">
+          בחר שם והזמן חבר כדי להתחיל משחק.
+        </div>
+      </section>
+
+      <aside class="side-panel">
+        <section class="panel-section">
+          <h2>חבר מחובר?</h2>
+          <button id="refresh-players" class="secondary-btn small">
+            רענן רשימת שחקנים
+          </button>
+          <ul id="players-list" class="players-list"></ul>
+        </section>
+
+        <section class="panel-section">
+          <h2>הזמנות</h2>
+          <ul id="incoming-list" class="invite-list"></ul>
+          <ul id="outgoing-list" class="invite-list outgoing"></ul>
+        </section>
+
+        <section class="panel-section">
+          <h2>לוג מהלכים</h2>
+          <ol id="moves-log" class="moves-log"></ol>
+        </section>
+      </aside>
+    </main>
+
+    <script src="/static/main.js"></script>
+  </body>
+  </html>
+
